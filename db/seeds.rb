@@ -23,6 +23,17 @@ VideoGame.create(
     # console_id:
 )
 
+VideoGame.create(
+    name: "Cuphead",
+    poster_link: "https://pro2-bar-s3-cdn-cf4.myportfolio.com/5d75624ed04b263bdfb754e8878f0c97/fc088eec-6047-47a4-9065-b9bb21d0f7ec_rw_1920.jpg?h=df209623c88d4fc46d3a9c269e1c7668",
+    esrb_rating: "E",
+    personal_rating: 4,
+    fave_character: "Baroness Von Bon Bon",
+    game_trailer: "https://www.youtube.com/watch?v=NN-9SQXoi50",
+    genre: "Shoot em up"
+    # console_id:
+)
+
 puts "✅ Done seeding!"
 
 ##need to $rake db:seed:replant after adding foreign key
