@@ -1,6 +1,26 @@
 puts "🌱 Seeding your stuffs..."
 
 # Seed your database here
+
+Console.create(
+    name: "PlayStation 2",
+    date_released: "2000-03-04",
+    company: "Sony"
+)
+
+Console.create(
+    name: "PlayStation 4",
+    date_released: "2013-11-15",
+    company: "Sony"
+)
+
+Console.create(
+    name: "Nintendo Switch",
+    date_released: "2017-03-03",
+    company: "Nintendo"
+)
+
+
 VideoGame.create(
     name: "Kingdom Hearts",
     poster_link: "https://i.etsystatic.com/9288793/r/il/c886c6/3263809410/il_1588xN.3263809410_7p85.jpg",
@@ -8,8 +28,8 @@ VideoGame.create(
     personal_rating: "5",
     fave_character: "Riku",
     game_trailer: "https://www.youtube.com/watch?v=4F4K4Zd6ON4",
-    genre: "Action RPG"
-    # console_id:
+    genre: "Action RPG",
+    console_id: 1
 )
 
 VideoGame.create(
@@ -19,8 +39,8 @@ VideoGame.create(
     personal_rating: "4",
     fave_character: "Boy",
     game_trailer: "https://www.youtube.com/watch?v=K0u_kAWLJOA",
-    genre: "Action-Adventure hack and slash"
-    # console_id:
+    genre: "Action-Adventure hack and slash",
+    console_id: 2
 )
 
 VideoGame.create(
@@ -30,8 +50,8 @@ VideoGame.create(
     personal_rating: 4,
     fave_character: "Baroness Von Bon Bon",
     game_trailer: "https://www.youtube.com/watch?v=NN-9SQXoi50",
-    genre: "Shoot em up"
-    # console_id:
+    genre: "Shoot em up",
+    console_id: 3
 )
 
 puts "✅ Done seeding!"
