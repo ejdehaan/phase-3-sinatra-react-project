@@ -2,23 +2,24 @@ puts "🌱 Seeding your stuffs..."
 
 # Seed your database here
 
-Console.create(
+ps2 = Console.create(
     name: "PlayStation 2",
     date_released: "2000-03-04",
     company: "Sony"
 )
 
-Console.create(
+ps4 = Console.create(
     name: "PlayStation 4",
     date_released: "2013-11-15",
     company: "Sony"
 )
 
-Console.create(
+switch = Console.create(
     name: "Nintendo Switch",
     date_released: "2017-03-03",
     company: "Nintendo"
 )
+
 
 
 VideoGame.create(
@@ -29,7 +30,7 @@ VideoGame.create(
     fave_character: "Riku",
     game_trailer: "https://www.youtube.com/watch?v=4F4K4Zd6ON4",
     genre: "Action RPG",
-    console_id: 1
+    console_id: ps2.id
 )
 
 VideoGame.create(
@@ -40,7 +41,7 @@ VideoGame.create(
     fave_character: "Boy",
     game_trailer: "https://www.youtube.com/watch?v=K0u_kAWLJOA",
     genre: "Action-Adventure hack and slash",
-    console_id: 2
+    console_id: ps4.id
 )
 
 VideoGame.create(
@@ -51,7 +52,7 @@ VideoGame.create(
     fave_character: "Baroness Von Bon Bon",
     game_trailer: "https://www.youtube.com/watch?v=NN-9SQXoi50",
     genre: "Shoot em up",
-    console_id: 3
+    console_id: switch.id
 )
 
 puts "✅ Done seeding!"
